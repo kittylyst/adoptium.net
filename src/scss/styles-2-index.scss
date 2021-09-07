@@ -1,6 +1,6 @@
 $mainblue: #152935;
-$maingrey: #F5F5F5;
-$brighterblue: #3D70B2;
+$maingrey: #f5f5f5;
+$brighterblue: #3d70b2;
 $accentgrey: #dadada;
 
 main .intro {
@@ -61,11 +61,11 @@ a.dl-button #dl-version {
 }
 
 a.dl-button .dl-description {
-  font-size: .8rem;
+  font-size: 0.8rem;
   position: absolute;
   left: 50%;
   white-space: nowrap;
-  transform: translate(-50%,-3.8rem);
+  transform: translate(-50%, -3.8rem);
   height: 50%; /* div take 100% of a tag height and goes out of bound */
 }
 
@@ -90,6 +90,56 @@ a.dl-thin-button:hover {
 
 .dl-container select#variant-selector {
   margin-top: 1rem;
+}
+
+.content-section {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 25%;
+}
+
+.left-align {
+  text-align: left;
+}
+.content-header {
+  color: #a80d55;
+  font-weight: 600;
+}
+
+.java-section {
+  background-color: rgb(147, 140, 163);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+h1,
+h3 {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 600;
+}
+
+.java-container {
+  display: flex;
+  justify-content: center;
+}
+
+.content-container img {
+  align-items: center;
+}
+.justify-align {
+  text-align: justify;
 }
 
 .home-links {
@@ -181,12 +231,15 @@ h2.transition-bright {
   color: $brighterblue;
 }
 
-.hotspot-text, .openj9-text, .lts-text {
+.hotspot-text,
+.openj9-text,
+.lts-text {
   line-height: 1.2rem;
 }
 
-.help-jvm:hover ~ .popup-content, .popup-content:hover {
-    visibility: visible;
+.help-jvm:hover ~ .popup-content,
+.popup-content:hover {
+  visibility: visible;
 }
 
 /* Popup arrow */
