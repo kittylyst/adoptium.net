@@ -28,6 +28,11 @@ main .intro a:hover {
   color: $brighterblue;
 }
 
+.top-section {
+  display: flex;
+  justify-content: center;
+}
+
 #loading-index {
   position: absolute;
   left: 50%;
@@ -42,7 +47,7 @@ a.dl-button {
   background-color: $brighterblue;
   color: $maingrey;
   border-radius: 0.2rem;
-  width: 20rem;
+  // width: 20rem;
   line-height: 5rem;
   font-size: 1.5rem;
   margin: 1.2rem 0.6rem 0 0.6rem;
@@ -52,8 +57,8 @@ a.dl-button {
 }
 
 #dl-text {
-  margin-top: 2.5rem;
-  margin-bottom: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 a.dl-button #dl-version {
@@ -90,6 +95,15 @@ a.dl-thin-button:hover {
 
 .dl-container select#variant-selector {
   margin-top: 1rem;
+}
+
+#dl-other {
+  margin-top: 1.5rem;
+  width: 20rem;
+}
+
+#dl-archive {
+  width: 20rem;
 }
 
 .content-section {
