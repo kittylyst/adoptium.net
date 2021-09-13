@@ -194,5 +194,10 @@
       "osDetectionString": "not-to-be-detected",
       "supported_version": "glibc version 2.27 or higher"
     }
-  ]
+  ],
+  "sampleYoutube": {
+    "title": "Sample youtube",
+    "src": "https://www.youtube.com/embed/NSOELVPYAF8",
+    "description": "talk about what Functional programming really is, and examine whether Java is really FP or not"
+  }
 }

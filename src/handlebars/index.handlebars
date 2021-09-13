@@ -67,7 +67,14 @@
     </div>
     <div class="content-container left-align">
       <h2 class="content-header">Videos</h2>
-      <iframe src="https://www.youtube.com/embed/NSOELVPYAF8" title="Sample video"></iframe>
+      <div id="video">
+        <script id="template-video" type="text/x-handlebars-template">
+          \{{#with sampleYoutube}}
+          <iframe src='\{{src}}'' title='\{{title}}' alt='\{{description}}'></iframe>
+          \{{/with}}
+        </script>
+      </div>
+      
       <a href="./support.html" class="no-underline">
         <h3 id="support-link" class="inline-block zero-margin">More...</h3>
       </a>
