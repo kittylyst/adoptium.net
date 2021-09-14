@@ -1,46 +1,52 @@
 {{> header title='' }}
 
 <main class="grey-bg home-main">
-  <h1>Prebuilt OpenJDK Binaries for Free!</h1>
-  <p class="intro">
-    Java™ is the world's leading programming language and platform.
-    The Adoptium Working Group promotes and supports high-quality, TCK certified runtimes and associated technology for use across the Java™ ecosystem.
-  </p>
+  <div class="top-section">
+    <div class="content-container">
+        <h1>Prebuilt OpenJDK Binaries for Free!</h1>
+        <p class="intro">
+        Java™ is the world's leading programming language and platform.
+        The Adoptium Working Group promotes and supports high-quality, TCK certified runtimes and associated technology for use across the Java™ ecosystem.
+        </p>
+    </div>
 
-  <div class="dl-container">
-    <h2 id="dl-text" class="invisible">Downloads</h2>
+    <div class="content-container center-align">
+        <h1 id="dl-text" class="invisible">Downloads</h1>
 
-    {{> jdk-selector }}
+         {{> jdk-selector }}
 
-    <div id='loading'><img src='dist/assets/loading_dots.gif' height='40' width='40' alt="Content is loading."></div>
-    <div id="error-container"></div>
+      <div id='loading'><img src='dist/assets/loading_dots.gif' height='40' width='40' alt="Content is loading."></div>
+       <div id="error-container"></div>
 
-    <a href="./releases.html" class="dl-button a-button fadeIn invisible" id="dl-latest">
-      <div id="dl-version">
-        <i id="dl-icon" class="fa fa-download" aria-hidden="true"></i>
-        <span>Latest release</span>
-        <i id="dl-icon-2" class="fa fa-arrow-circle-o-right hide" aria-hidden="true"></i>
-      </div>
-      <div class="dl-description">
-        <var id="dl-version-text" class="small-dl-text" release-version></var>
-        <div id="jck-approved-tick" class='tick hide' data-tooltip="This build is JCK certified."><img src='./dist/assets/tick.png' alt="This build is JCK certified."></div>
-      </div>
-    </a>
+         <a href="./releases.html" class="dl-button a-button fadeIn invisible" id="dl-latest">
+          <div id="dl-version">
+           <i id="dl-icon" class="fa fa-download" aria-hidden="true"></i>
+           <span>Latest release</span>
+            <i id="dl-icon-2" class="fa fa-arrow-circle-o-right hide" aria-hidden="true"></i>
+          </div>
+           <div class="dl-description">
+             <var id="dl-version-text" class="small-dl-text" release-version></var>
+            <div id="jck-approved-tick" class='tick hide' data-tooltip="This build is JCK certified."><img src='./dist/assets/tick.png' alt="This build is JCK certified."></div>
+          </div>
+        </a>
+    </div>
 
-    <a href="./releases.html" class="dl-button dl-thin-button a-button fadeIn invisible" id="dl-other">
-      <div>
-        <span>Other platforms</span>
-        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-      </div>
-    </a>
-
-    <a href="./archive.html" class="dl-button dl-thin-button a-button fadeIn invisible" id="dl-archive">
-      <div>
-        <span>Release Archive</span>
-        <i class="fa fa-archive" aria-hidden="true"></i>
-      </div>
-    </a>
+      <div class="content-container">
+         <a href="./releases.html" class="dl-button dl-thin-button a-button fadeIn invisible" id="dl-other">
+          <div class="other-btn">
+            <span>Other platforms</span>
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+         </div>
+        </a>
+        <a href="./archive.html" class="dl-button dl-thin-button a-button fadeIn invisible" id="dl-archive">
+          <div>
+            <span>Release Archive</span>
+            <i class="fa fa-archive" aria-hidden="true"></i>
+          </div>
+        </a>
+    </div>
   </div>
+</div>
 
   <div class="content-section">
     <div class="content-container center-align">
@@ -74,7 +80,6 @@
           \{{/with}}
         </script>
       </div>
-      
       <a href="./support.html" class="no-underline">
         <h3 id="support-link" class="inline-block zero-margin">More...</h3>
       </a>
