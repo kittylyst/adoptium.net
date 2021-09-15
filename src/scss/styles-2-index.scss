@@ -118,6 +118,11 @@ a.dl-thin-button:hover {
   padding: 1rem;
   width: 25%;
 }
+.img-content > img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}
 
 .left-align {
   text-align: left;
