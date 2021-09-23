@@ -10,7 +10,9 @@ const {
   jvmVariant,
   variant
 } = require('./common');
-const { sampleYoutube } = require("../json/config");
+const {
+  sampleYoutube
+} = require("../json/config");
 
 // set variables for all index page HTML elements that will be used by the JS
 const loading = document.getElementById('loading');

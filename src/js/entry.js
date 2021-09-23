@@ -19,5 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return require('./releases').load();
     case 'nightly':
       return require('./nightly').load();
+    case 'learn':
+      return require('./learn').load();
   }
 });

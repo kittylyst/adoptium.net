@@ -199,5 +199,13 @@
     "title": "YouTube Front Page",
     "src": "https://www.youtube.com/embed/NSOELVPYAF8",
     "description": "talk about what Functional programming really is, and examine whether Java is really FP or not"
-  }
+  },
+  "glossaryTerms": [
+    {
+      "description": "Foo"
+    },
+    {
+      "description": "Bar"
+    }
+  ]
 }
