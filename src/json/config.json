@@ -202,10 +202,26 @@
   },
   "glossaryTerms": [
     {
-      "description": "Foo"
+      "name": "OpenJDK",
+      "description": "The Open Source project that develops the source code for the reference implementation of Java"
     },
     {
-      "description": "Bar"
+      "name": "JDK",
+      "description": "The Java Development Kit - Java's standard library of useful classes"
     }
+  ],
+  "newsItems": [
+    {
+      "url": "https://dev.java/learn/tutorial/your-first-java-app/getting-started-with-java.html",
+      "title": "Getting Started With Java"
+    },
+    {
+      "url": "https://dev.java/learn/tutorial/getting-to-know-the-language/basics/language-basics.html",
+      "title": "Java Language Basics"
+    },
+    {
+      "url": "https://dev.java/learn/tutorial/getting-to-know-the-language/inheritance/inheritance.html",
+      "title": "Inheritance"
+    }    
   ]
 }

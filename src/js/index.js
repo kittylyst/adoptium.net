@@ -11,7 +11,8 @@ const {
   variant
 } = require('./common');
 const {
-  sampleYoutube
+  sampleYoutube,
+  newsItems
 } = require("../json/config");
 
 // set variables for all index page HTML elements that will be used by the JS
@@ -130,7 +131,11 @@ function buildHomepageHTML(releasesJson, jckJSON, OS) {
   }, 1000);
 
   // set sample youtube section
-  const template = Handlebars.compile(document.getElementById("template-video").innerHTML);
-  document.getElementById("video").innerHTML = template({sampleYoutube});
+  const videoTemplate = Handlebars.compile(document.getElementById("template-video").innerHTML);
+  document.getElementById("video").innerHTML = videoTemplate({sampleYoutube});
+
+  // setup news section
+  const newsTemplate = Handlebars.compile(document.getElementById("newsTemplate").innerHTML);
+  document.getElementById("news").innerHTML = newsTemplate({newsItems});
   
 }

@@ -1,0 +1,16 @@
+{{> header title='News | ' }}
+
+<main class="grey-bg">
+   <h1 class="margin-bottom large-title">News and Articles</h1>
+      <div class="content-container left-align" id="newsItems">
+         <script id="template" type="text/x-handlebars-template">
+         \{{#each newsItems}}
+            <div>
+               <p class="justify-align"><a href="\{{this.url}}">\{{this.title}}</a></p>
+            </div>
+         \{{/each}}
+         </script>
+      </div>
+</main>
+
+{{> footer }}
