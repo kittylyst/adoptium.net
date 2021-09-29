@@ -1,7 +1,16 @@
 {{> header title='Learn | ' }}
 
 <main class="grey-bg">
-   <h1 class="margin-bottom large-title">Learn More</h1>
+   <h1 class="margin-bottom large-title">Glossary</h1>
+      <div class="content-container left-align" id="glossary">
+         <script id="template" type="text/x-handlebars-template">
+         \{{#each glossaryTerms}}
+            <div>
+               <p class="justify-align"><b>\{{this.name}}</b>: \{{this.description}}</p>
+            </div>
+         \{{/each}}
+         </script>
+      </div>
 </main>
 
 {{> footer }}

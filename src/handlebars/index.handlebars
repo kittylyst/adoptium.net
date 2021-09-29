@@ -58,19 +58,16 @@
     </div>
     <div class="content-container left-align">
       <h2 class="content-header home-links">News &amp; Articles</h2>
-      <a href="./support.html" class="no-underline home-links">
-        <h3 id="support-link" class="inline-block zero-margin">Java in 2021</h3>
-      </a> <br>
-      <a href="./support.html" class="no-underline home-links">
-        <h3 id="support-link" class="inline-block zero-margin">Java for Python Developers</h3>
-      </a> <br>
-      <a href="./support.html" class="no-underline home-links">
-        <h3 id="support-link" class="inline-block zero-margin">AdoptOpenJDK becomes Adoptium</h3>
-      </a> <br>
-      <a href="./support.html" class="no-underline home-links">
-        <h3 id="support-link" class="inline-block zero-margin">Learning Java as a JS dev</h3>
-      </a> <br>
-      <a href="./support.html" class="no-underline home-links">
+      <div id="news">
+        <script id="newsTemplate" type="text/x-handlebars-template">
+          \{{#each newsItems}}
+          <a href="\{{this.url}}" class="no-underline home-links">
+            <h3 id="support-link" class="inline-block zero-margin">\{{this.title}}</h3>
+          </a> <br/> <br/>
+          \{{/each}}
+        </script>
+      </div>
+      <a href="./news.html" class="no-underline home-links">
         <h3 id="support-link" class="inline-block zero-margin">More...</h3>
       </a>
     </div>
@@ -106,7 +103,7 @@
       <p class="justify-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
       aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       Duis
-      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      aute irure dolor reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="content-container">
       <div class="img-content">
